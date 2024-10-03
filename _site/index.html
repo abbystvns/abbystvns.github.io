@@ -17,97 +17,112 @@
     <div class="col-lg-8 mx-auto p-3 py-md-5">
       <header class="d-flex flex-column flex-md-row align-items-center pb-3 mb-5 border-bottom">
   <div>
-    <a href="/" class="d-flex align-items-center text-decoration-none">
+    <a href="/" class="d-flex align-items-center text-decoration-none site-title">
       <span class="fs-2" style="color:black"><i>ABBY STEVENS</i></span>
     </a>
-    <a href="/" class="d-flex align-items-center text-decoration-none">
+    <a href="/" class="d-flex align-items-center text-decoration-none site-description">
       <span></span>
     </a>
   </div>
   <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
     
-      <a class="me-3 py-2 text-decoration-none" href="/">home</a>
+      <a class="me-3 py-2 menu-item" href="/">home</a>
     
-      <a class="me-3 py-2 text-decoration-none" href="/research">research</a>
+      <a class="me-3 py-2 menu-item" href="/research">research</a>
     
-    <a class="me-3 py-2 text-decoration-none" href="/assets/abby_cv_2022.pdf">cv</a>
+    <a class="me-3 py-2 menu-item" href="/assets/cv_2024.pdf">cv</a>
   </nav>
 </header>
 
-
+<style>
+.menu-item {
+    text-decoration-line: underline;
+    font-style: italic; 
+    font-weight: 500;
+    text-decoration-style: wavy;
+    text-decoration-color: navy; /* Navy color */
+    text-underline-offset: 3px; /* Add space between text and underline */
+    line-height: 1.5; /* Increase line height to prevent clipping */
+    margin-right: 10px; /* Add space between links */
+}
+</style>
       <div class="row">
-  <div class="col-md-3">
-    <img src="http://localhost:4000/assets/img/parisface.jpeg" alt="Home" width="100%">
+  <div class="col-md-4 col-12 mb-3 image-container">
+    <img src="http://localhost:4000/assets/img/provincial.jpg" alt="Home" width="90%">
   </div>
 
-  <div class="col-md-9">
+  <div class="col-md-8 col-12">
     <!-- <h3 class="fw-bold">Research</h3> -->
-    <p>Hi! I’m Abby and I live in San Francisco.</p>
+    <p>Hi! I’m Abby and I live in San Francisco. I’m broadly interested in making tools from statistics and machine learning more transparent, useful, and ethical, especially when deployed in domains with high social impact. I’m currently a research scientist in the Social and Behavioral Systems group at <a href="https://www.anl.gov/profile/abby-stevens">Argonne National Laboratory</a>, where I develop statistical methods that make large-scale experimentation with complex mechanistic simulators, like climate and epidemiological models, more computationally feasible and accessible to decision-makers.</p>
 
-<p>I’m broadly interested in making tools from statistics and machine learning more transparent, useful, and ethical. I focus 
-on problems with significant societal impact, such as climate change and public health.</p>
+<p>I got a PhD in Statistics from <a href="https://stat.uchicago.edu/">UChicago</a> in 2022, where I was advised by <a href="https://willett.psd.uchicago.edu/">Becca Willett</a> and studied interpretability in machine learning methods. Before that, I worked for a few years as a data scientist at <a href="https://www.doximity.com/">Doximity</a>. I graduated with a math degree from <a href="https://www.grinnell.edu/academics/majors-concentrations/math-stats">Grinnell College</a> in 2014.</p>
 
-<p>I received my PhD in Statistics from <a href="https://stat.uchicago.edu/">UChicago</a> earlier this summer, advised by <a href="https://willett.psd.uchicago.edu/">Becca Willett</a>. 
-Before that, I worked for a few years as a data scientist at <a href="https://www.doximity.com/">Doximity</a>.
-I graduated with a math degree from <a href="https://www.grinnell.edu/academics/majors-concentrations/math-stats">Grinnell College</a> in 2014.</p>
-
-<p>I had a great time organizing <a href="https://widschicago.org/">Women in Data Science Chicago</a> during grad school, and 
-have been involved in a number of data science for social good initiatives such as the
+<p>I had a great time organizing <a href="https://widschicago.org/">Women in Data Science Chicago</a> during grad school, and have been involved in a number of data science for social good initiatives such as the
 Data Science Working Group at <a href="https://www.codeforsanfrancisco.org/">Code for San Francisco</a> and the 
-<a href="http://www.datasciencepublicpolicy.org/">Center for Data Science and Public Policy</a>. Outside of this stuff, I love to travel, eat, drink wine, 
-and do a bunch of weird crafts.</p>
+<a href="http://www.datasciencepublicpolicy.org/">Center for Data Science and Public Policy</a>.</p>
+
+<p>I’m also very passionate about things like food and wine and traveling and hiking and reading and listening to music and hanging out, and I always have a new craft on rotation (<a href="https://www.artclay.co.jp/htm/products/what_is_artclaysilver.shtml">silver clay</a>, as of the latest update).</p>
 
 
   </div>
 </div>
 
-<!--
-<div class="row g-5 mb-5">
-  <div>
-    <h4 class="fw-bold border-bottom pb-3 mb-5">Publications</h4>
-    
-      
-        <p><a href="/publications/1501.07274.pdf">Testing General Relativity with Present and Future Astrophysical Observations. Emanuele Berti (Mississippi U. and Lisbon, CENTRA), Enrico Barausse (Paris, Inst. Astrophys. and Paris U., VI-VII), Vitor Cardoso (Lisbon, IST and Perimeter Inst. Theor. Phys. and Lisbon, CENTRA), Leonardo Gualtieri (Rome U. and INFN, Rome), Paolo Pani (Rome U. and INFN, Rome and Lisbon, IST and Lisbon, CENTRA) et al.</a></p>
-      
-        <p><a href="http://ms.mcmaster.ca/kevla/pdf/articles/PhilTransRSoc_2013.pdf">Shock interactions, turbulence and the origin of the stellar mass spectrum. Ralph E. Pudritz and N. K.-R. Kevlahan</a></p>
-      
-        <p><a href="http://ms.mcmaster.ca/kevla/pdf/articles/jcp_v414.pdf">Low shear diffusion central schemes for particle methods. Jonathan Panuelos, James Wadsley, Nicholas Kevlahan</a></p>
-      
-    
-  </div>
-</div>
+<style>
+/* Ensure there is enough space between image and text on smaller screens */
+.image-container {
+    text-align: center;
+    margin-bottom: 20px; /* Add space below image on smaller screens */
+}
 
+@media (max-width: 768px) {
+    .image-container img {
+        width: 75%; /* Make the image take full width on smaller screens */
+    }
+}
+</style>
 
-<div class="row g-5 mb-5">
-  <div class="col-md-12">
-    <h3 class="fw-bold border-bottom pb-3 mb-5">Updates</h3>
-    
-      <p><a href="//2020/03/01/new-paper-published.html">New Paper Published</a> - March 1, 2020</p>
-    
-      <p><a href="//2020/02/01/class-update.html">Class Update</a> - February 1, 2020</p>
-    
-      <p><a href="//2020/01/01/sample-post.html">Sample Post</a> - January 1, 2020</p>
-    
-  </div>
-</div>
--->
-
-      <footer class="pt-5 my-5 text-muted border-top">
-  <div class="row">
-    <div class="col-md-6 text-end social-media-icons">
-      
-        <a href="https://github.com/abbystvns" class="ms-3 fs-5"><i class="fab fa-github"></i></a>
-      
-        <a href="https://scholar.google.com/citations?user=9Wn7a2MAAAAJ&hl=en" class="ms-3 fs-5"><i class="fab fa-google"></i></a>
-      
-        <a href="https://www.instagram.com/abbbyst" class="ms-3 fs-5"><i class="fab fa-instagram"></i></a>
-      
-        <a href="https://www.linkedin.com/in/abbyestevens/" class="ms-3 fs-5"><i class="fab fa-linkedin"></i></a>
-      
-      <br>
-      <small><i>abbystevens@uchicago.edu</i></small>
+      <footer class="pt-3 my-5 text-muted footer-background">
+  <div class="container">
+    <div class="row">
+      <!-- Left-aligned social media icons and updated text -->
+      <div class="col-md-6 text-start social-media-icons">
+        
+          <a href="https://github.com/abbystvns" class="me-3 fs-5"><i class="fab fa-github"></i></a>
+        
+          <a href="https://scholar.google.com/citations?user=9Wn7a2MAAAAJ&hl=en" class="me-3 fs-5"><i class="fab fa-google"></i></a>
+        
+          <a href="https://www.instagram.com/abbbyst" class="me-3 fs-5"><i class="fab fa-instagram"></i></a>
+        
+          <a href="https://www.linkedin.com/in/abbyestevens/" class="me-3 fs-5"><i class="fab fa-linkedin"></i></a>
+        
+        <!-- Add updated text under social media icons -->
+        <br>
+        <small><i>updated fall24</i></small>
+      </div>
     </div>
+  </div>
 </footer>
+
+<style>
+.footer-background {
+    position: relative;
+    padding-top: 20px; /* Adjust as necessary */
+}
+
+.footer-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full viewport width */
+    height: 10px; /* Height of the SVG */
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10000" height="10"><path d="M0 5 Q 50 0 100 5 T 200 5 T 300 5 T 400 5 T 500 5 T 600 5 T 700 5 T 800 5 T 900 5 T 1000 5" fill="transparent" stroke="%23CC5500" stroke-width="2"/></svg>') repeat-x;
+    background-size: auto; /* Ensure the wave repeats */
+    z-index: -1; /* Ensure the wave stays behind the content */
+}
+
+
+</style>
 
     </div>
   </body>

@@ -1,10 +1,36 @@
-<footer class="pt-5 my-5 text-muted border-top">
-  <div class="row">
-    <div class="col-md-6 text-end social-media-icons">
-      {% for item in site.data.settings.social %}
-        <a href="{{ item.link }}" class="ms-3 fs-5"><i class="fab fa-{{ item.icon }}"></i></a>
-      {% endfor %}
-      <br>
-      <small><i>abbystevens@uchicago.edu</i></small>
+<footer class="pt-3 my-5 text-muted footer-background">
+  <div class="container">
+    <div class="row">
+      <!-- Left-aligned social media icons and updated text -->
+      <div class="col-md-6 text-start social-media-icons">
+        {% for item in site.data.settings.social %}
+          <a href="{{ item.link }}" class="me-3 fs-5"><i class="fab fa-{{ item.icon }}"></i></a>
+        {% endfor %}
+        <!-- Add updated text under social media icons -->
+        <br>
+        <small><i>updated fall24</i></small>
+      </div>
     </div>
+  </div>
 </footer>
+
+<style>
+.footer-background {
+    position: relative;
+    padding-top: 20px; /* Adjust as necessary */
+}
+
+.footer-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full viewport width */
+    height: 10px; /* Height of the SVG */
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10000" height="10"><path d="M0 5 Q 50 0 100 5 T 200 5 T 300 5 T 400 5 T 500 5 T 600 5 T 700 5 T 800 5 T 900 5 T 1000 5" fill="transparent" stroke="%23CC5500" stroke-width="2"/></svg>') repeat-x;
+    background-size: auto; /* Ensure the wave repeats */
+    z-index: -1; /* Ensure the wave stays behind the content */
+}
+
+
+</style>

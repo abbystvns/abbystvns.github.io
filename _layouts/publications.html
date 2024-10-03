@@ -4,31 +4,63 @@ layout: default
 
 <!DOCTYPE html>
 <html>
+  <head>
+    <style>
+a {
+    color: lime !important; /* Specify the color of the font */
+    text-decoration-line: underline;
+    font-style: italic; 
+    font-weight: 500;
+    text-decoration-style: wavy;
+    text-decoration-color: navy; /* Burnt orange color */
+    text-underline-offset: 3px; /* Add space between text and underline */
+    line-height: 1.5; /* Increase line height to prevent clipping */
+    margin-right: 10px; /* Add space between links */
+}
+
+.page-heading {
+    position: relative;
+    padding-bottom: 10px; /* Add space for the wavy line */
+}
+
+.page-heading::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 10px; /* Adjust the height as needed */
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="120%" height="10"><path d="M0 5 Q 25 0 50 5 T 100 5 T 150 5 T 200 5" fill="transparent" stroke="%23CC5500" stroke-width="2"/></svg>') repeat-x;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+    </style>
+    </head>
   <body>
     <div class="page-content">
       <div class="wrapper">
         <div class="work">
-          <h3 class="page-heading">Research</h3>
+          <h3 class="page-heading">Publications</h3>
+          <br>
           {{ content }}
           {% for item in page.publications %}
           <div class="work-item">
             <span class="work-text">
-              <br>
               <h5>{{ item.title }}</h5>
               {{ item.authors }}</br>
               <i>{{ item.conference }}</i></br>
               {% if item.paperlink != "NA" %}
-                  <a href={{ item.paperlink }} class="current">Paper</a>
+                  <a href={{ item.paperlink }}>PAPER</a>
               {% endif %}
               {% if item.codelink != "NA" %}
-                  <a href={{ item.codelink }} target="_blank"
-                     class="work-button">Code</a>
+                  <a href={{ item.codelink }} target="_blank">CODE</a>
               {% endif %}
                 {% if item.slides != "NA" %}
-                  <a href={{ item.slides }} target="_blank"
-                     class="work-button">Slides</a>
+                  <a href={{ item.slides }} target="_blank">SLIDES</a>
               {% endif %}
               <br>
+              <hr class="thin-line">
             </span>
           </div>
           {% endfor %}

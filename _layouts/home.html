@@ -3,25 +3,26 @@ layout: default
 ---
 
 <div class="row">
-  <div class="col-md-3">
-    <img src="{{ site.url }}/assets/img/parisface.jpeg" alt="Home" width="100%">
+  <div class="col-md-4 col-12 mb-3 image-container">
+    <img src="{{ site.url }}/assets/img/provincial.jpg" alt="Home" width="90%">
   </div>
 
-  <div class="col-md-9">
+  <div class="col-md-8 col-12">
     <!-- <h3 class="fw-bold">Research</h3> -->
     {{ content }}
   </div>
 </div>
 
-<!--
-{% include publications.html %}
+<style>
+/* Ensure there is enough space between image and text on smaller screens */
+.image-container {
+    text-align: center;
+    margin-bottom: 20px; /* Add space below image on smaller screens */
+}
 
-<div class="row g-5 mb-5">
-  <div class="col-md-12">
-    <h3 class="fw-bold border-bottom pb-3 mb-5">Updates</h3>
-    {% for post in site.posts %}
-      <p><a href="{{ site.github.url }}/{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %-d, %Y" }}</p>
-    {% endfor %}
-  </div>
-</div>
--->
+@media (max-width: 768px) {
+    .image-container img {
+        width: 75%; /* Make the image take full width on smaller screens */
+    }
+}
+</style>
