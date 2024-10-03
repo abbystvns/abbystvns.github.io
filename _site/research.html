@@ -17,133 +17,264 @@
     <div class="col-lg-8 mx-auto p-3 py-md-5">
       <header class="d-flex flex-column flex-md-row align-items-center pb-3 mb-5 border-bottom">
   <div>
-    <a href="/" class="d-flex align-items-center text-decoration-none">
+    <a href="/" class="d-flex align-items-center text-decoration-none site-title">
       <span class="fs-2" style="color:black"><i>ABBY STEVENS</i></span>
     </a>
-    <a href="/" class="d-flex align-items-center text-decoration-none">
+    <a href="/" class="d-flex align-items-center text-decoration-none site-description">
       <span></span>
     </a>
   </div>
   <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
     
-      <a class="me-3 py-2 text-decoration-none" href="/">home</a>
+      <a class="me-3 py-2 menu-item" href="/">home</a>
     
-      <a class="me-3 py-2 text-decoration-none" href="/research">research</a>
+      <a class="me-3 py-2 menu-item" href="/research">research</a>
     
-    <a class="me-3 py-2 text-decoration-none" href="/assets/abby_cv_2022.pdf">cv</a>
+    <a class="me-3 py-2 menu-item" href="/assets/cv_2024.pdf">cv</a>
   </nav>
 </header>
 
-
+<style>
+.menu-item {
+    text-decoration-line: underline;
+    font-style: italic; 
+    font-weight: 500;
+    text-decoration-style: wavy;
+    text-decoration-color: navy; /* Navy color */
+    text-underline-offset: 3px; /* Add space between text and underline */
+    line-height: 1.5; /* Increase line height to prevent clipping */
+    margin-right: 10px; /* Add space between links */
+}
+</style>
       <!DOCTYPE html>
 <html>
+  <head>
+    <style>
+a {
+    color: lime !important; /* Specify the color of the font */
+    text-decoration-line: underline;
+    font-style: italic; 
+    font-weight: 500;
+    text-decoration-style: wavy;
+    text-decoration-color: navy; /* Burnt orange color */
+    text-underline-offset: 3px; /* Add space between text and underline */
+    line-height: 1.5; /* Increase line height to prevent clipping */
+    margin-right: 10px; /* Add space between links */
+}
+
+.page-heading {
+    position: relative;
+    padding-bottom: 10px; /* Add space for the wavy line */
+}
+
+.page-heading::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 10px; /* Adjust the height as needed */
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="120%" height="10"><path d="M0 5 Q 25 0 50 5 T 100 5 T 150 5 T 200 5" fill="transparent" stroke="%23CC5500" stroke-width="2"/></svg>') repeat-x;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+    </style>
+    </head>
   <body>
     <div class="page-content">
       <div class="wrapper">
         <div class="work">
-          <h3 class="page-heading">Research</h3>
+          <h3 class="page-heading">Publications</h3>
+          <br>
           
 
           
           <div class="work-item">
             <span class="work-text">
+              <h5>Towards Improved Uncertainty Quantification of Stochastic Epidemic Models Using Sequential Monte Carlo</h5>
+              Arindam Fadikar, <b>Abby Stevens</b>, Nicholson Collier, Kok Ben Toh, Olga Morozova, Anna Hotton, Jared Clark, David Higdon, Jonathan Ozik</br>
+              <i>2024 IEEE International Parallel and Distributed Processing Symposium Workshops</i></br>
+              
+                  <a href=https://www.computer.org/csdl/proceedings-article/ipdpsw/2024/646000a843/1YTsoeuIbkY>PAPER</a>
+              
+              
+                
               <br>
+              <hr class="thin-line">
+            </span>
+          </div>
+          
+          <div class="work-item">
+            <span class="work-text">
+              <h5>Trajectory-oriented optimization of stochastic epidemiological models</h5>
+              Arindam Fadikar, Nicholson Collier, <b>Abby Stevens</b>, Jonathan Ozik, Mickaël Binois, Kok Ben Toh</br>
+              <i>2023 Winter Simulation Conference</i></br>
+              
+                  <a href=https://ieeexplore.ieee.org/document/10408258>PAPER</a>
+              
+              
+                
+              <br>
+              <hr class="thin-line">
+            </span>
+          </div>
+          
+          <div class="work-item">
+            <span class="work-text">
+              <h5>Developing distributed high-performance computing capabilities of an open science platform for robust epidemic analysis</h5>
+              Nicholson Collier, Justin M Wozniak, <b>Abby Stevens</b>, Yadu Babuji, Mickaël Binois, Arindam Fadikar, Alexandra Würth, Kyle Chard, Jonathan Ozik</br>
+              <i>2023 IEEE International Parallel and Distributed Processing Symposium Workshops</i></br>
+              
+                  <a href=https://ieeexplore.ieee.org/document/10196539>PAPER</a>
+              
+              
+                
+              <br>
+              <hr class="thin-line">
+            </span>
+          </div>
+          
+          <div class="work-item">
+            <span class="work-text">
+              <h5>NSF RESUME HPC Workshop High-Performance Computing and Large-Scale Data Management in Service of Epidemiological Modeling</h5>
+              <b>Abby Stevens</b>, Jonathan Ozik, Kyle Chard, Jaline Gerardin, Justin M Wozniak</br>
+              <i>Workshop report</i></br>
+              
+                  <a href=https://arxiv.org/abs/2308.04602>PAPER</a>
+              
+              
+                
+              <br>
+              <hr class="thin-line">
+            </span>
+          </div>
+          
+          <div class="work-item">
+            <span class="work-text">
+              <h5>NSF RESUME EcoEpi Workshop One Health Surveillance and Predictive Intelligence for Eco-Epidemiological Modeling</h5>
+              <b>Abby Stevens</b>, Jonathan Ozik, Junhong Chen, Rachel Poretsky, Arvind Ramanathan</br>
+              <i>Workshop report</i></br>
+              
+                  <a href=https://doi.org/10.31219/osf.io/tazm2>PAPER</a>
+              
+              
+                
+              <br>
+              <hr class="thin-line">
+            </span>
+          </div>
+          
+          <div class="work-item">
+            <span class="work-text">
+              <h5>Co-Designing Capabilities for a Robust Pandemic</h5>
+              Pedro Nascimento de Lima, <b>Abby Stevens</b>, Raffaele Vardavas, Jonathan Ozik, Robert J Lempert</br>
+              <i>Workshop report</i></br>
+              
+                  <a href=https://www.rand.org/pubs/working_papers/WRA3085-1.html>PAPER</a>
+              
+              
+                
+              <br>
+              <hr class="thin-line">
+            </span>
+          </div>
+          
+          <div class="work-item">
+            <span class="work-text">
               <h5>Lazy estimation of variable importance for large neural networks</h5>
               Yue Gao*, <b>Abby Stevens</b>*, Garvesh Raskutti, Rebecca Willett</br>
               <i>ICML, 2022</i></br>
               
-                  <a href=https://proceedings.mlr.press/v162/gao22h.html class="current">Paper</a>
+                  <a href=https://proceedings.mlr.press/v162/gao22h.html>PAPER</a>
               
               
-                  <a href=https://github.com/Willett-Group/lazyvi target="_blank"
-                     class="work-button">Code</a>
+                  <a href=https://github.com/Willett-Group/lazyvi target="_blank">CODE</a>
               
                 
-                  <a href=https://icml.cc/media/icml-2022/Slides/18088.pdf target="_blank"
-                     class="work-button">Slides</a>
+                  <a href=https://icml.cc/media/icml-2022/Slides/18088.pdf target="_blank">SLIDES</a>
               
               <br>
+              <hr class="thin-line">
             </span>
           </div>
           
           <div class="work-item">
             <span class="work-text">
-              <br>
               <h5>Impact of changes in protective behaviors and out-of-household activities by age on Covid-19 transmission and hospitalization in Chicago, Illinois</h5>
               Anna L Hotton, Jonathan Ozik, Chaitanya Kaligotla, Nick Collier, <b>Abby Stevens</b>, Aditya S Khanna, Margaret M MacDonell, Cheng Wang, David J LePoire, Young-Soo Chang, Ignacio J Martinez-Moyano, Bogdan Mucenic, Harold A Pollack, John A Schneider, Charles Macal</br>
               <i>Annals of Epidemiology, 2022</i></br>
               
-                  <a href=https://reader.elsevier.com/reader/sd/pii/S1047279722001053?token=0B3F533820B402EFD0CF5F7D22C775065DAD21FFE1559FEF2AE19A08A4BBB324A8BD103A8975D1E19044F951A1534BD1&originRegion=us-east-1&originCreation=20220817050919 class="current">Paper</a>
+                  <a href=https://reader.elsevier.com/reader/sd/pii/S1047279722001053?token=0B3F533820B402EFD0CF5F7D22C775065DAD21FFE1559FEF2AE19A08A4BBB324A8BD103A8975D1E19044F951A1534BD1&originRegion=us-east-1&originCreation=20220817050919>PAPER</a>
               
               
                 
               <br>
+              <hr class="thin-line">
             </span>
           </div>
           
           <div class="work-item">
             <span class="work-text">
-              <br>
               <h5>Load Balancing Schemes for Large Synthetic Population-Based Complex Simulators</h5>
               Bogdan Mucenic, Chaitanya Kaligotla, <b>Abby Stevens</b>, Jonathan Ozik, Nicholson Collier, Charles Macal</br>
               <i>IEEE IPDPSW, 2021</i></br>
               
-                  <a href=https://ieeexplore.ieee.org/document/9460663 class="current">Paper</a>
+                  <a href=https://ieeexplore.ieee.org/document/9460663>PAPER</a>
               
               
                 
               <br>
+              <hr class="thin-line">
             </span>
           </div>
           
           <div class="work-item">
             <span class="work-text">
-              <br>
               <h5>Development of a large-scale synthetic population to simulate Covid-19 transmission and response</h5>
               Chaitanya Kaligotla, <b>Abby Stevens</b>, Jonathan Ozik, Nicholson Collier, Charles Macal, Ignacio J. Martinez-Moyano, Bogdan Mucenic, Anna Hotton, Kyoung Whan Choe</br>
               <i>Winter Simulation Conference, 2020</i></br>
               
-                  <a href=https://informs-sim.org/wsc20papers/088.pdf class="current">Paper</a>
+                  <a href=https://informs-sim.org/wsc20papers/088.pdf>PAPER</a>
               
               
                 
               <br>
+              <hr class="thin-line">
             </span>
           </div>
           
           <div class="work-item">
             <span class="work-text">
-              <br>
               <h5>Graph-Guided Regularized Regression of Pacific Ocean Climate Variables to Increase Predictive Skill of Southwestern U.S. Winter Precipitation</h5>
               <b>Abby Stevens</b>, Rebecca Willett, Antonios Mamalakis, Efi Foufoula-Georgiou, Alejandro Tejedor, James T. Randerson, Padhraic Smyth, Stephen Wright</br>
               <i>Journal of Climate, 2020</i></br>
               
-                  <a href=https://journals.ametsoc.org/view/journals/clim/34/2/JCLI-D-20-0079.1.xml class="current">Paper</a>
+                  <a href=https://journals.ametsoc.org/view/journals/clim/34/2/JCLI-D-20-0079.1.xml>PAPER</a>
               
               
-                  <a href=https://github.com/Willett-Group/gtv_forecasting target="_blank"
-                     class="work-button">Code</a>
+                  <a href=https://github.com/Willett-Group/gtv_forecasting target="_blank">CODE</a>
               
                 
               <br>
+              <hr class="thin-line">
             </span>
           </div>
           
           <div class="work-item">
             <span class="work-text">
-              <br>
               <h5>Aequitas - A Bias and Fairness Audit Toolkit</h5>
               Pedro Saleiro, Benedict Kuester, Loren Hinkson, Jesse London, <b>Abby Stevens</b>, Ari Anisfeld, Kit T Rodolfa, Rayid Ghani</br>
               <i>Center for Data Science and Public Policy, 2018</i></br>
               
-                  <a href=https://arxiv.org/pdf/1811.05577.pdf class="current">Paper</a>
+                  <a href=https://arxiv.org/pdf/1811.05577.pdf>PAPER</a>
               
               
-                  <a href=https://github.com/dssg/aequitas target="_blank"
-                     class="work-button">Code</a>
+                  <a href=https://github.com/dssg/aequitas target="_blank">CODE</a>
               
                 
               <br>
+              <hr class="thin-line">
             </span>
           </div>
           
@@ -154,22 +285,48 @@
 
   </body>
 </html>
-      <footer class="pt-5 my-5 text-muted border-top">
-  <div class="row">
-    <div class="col-md-6 text-end social-media-icons">
-      
-        <a href="https://github.com/abbystvns" class="ms-3 fs-5"><i class="fab fa-github"></i></a>
-      
-        <a href="https://scholar.google.com/citations?user=9Wn7a2MAAAAJ&hl=en" class="ms-3 fs-5"><i class="fab fa-google"></i></a>
-      
-        <a href="https://www.instagram.com/abbbyst" class="ms-3 fs-5"><i class="fab fa-instagram"></i></a>
-      
-        <a href="https://www.linkedin.com/in/abbyestevens/" class="ms-3 fs-5"><i class="fab fa-linkedin"></i></a>
-      
-      <br>
-      <small><i>abbystevens@uchicago.edu</i></small>
+      <footer class="pt-3 my-5 text-muted footer-background">
+  <div class="container">
+    <div class="row">
+      <!-- Left-aligned social media icons and updated text -->
+      <div class="col-md-6 text-start social-media-icons">
+        
+          <a href="https://github.com/abbystvns" class="me-3 fs-5"><i class="fab fa-github"></i></a>
+        
+          <a href="https://scholar.google.com/citations?user=9Wn7a2MAAAAJ&hl=en" class="me-3 fs-5"><i class="fab fa-google"></i></a>
+        
+          <a href="https://www.instagram.com/abbbyst" class="me-3 fs-5"><i class="fab fa-instagram"></i></a>
+        
+          <a href="https://www.linkedin.com/in/abbyestevens/" class="me-3 fs-5"><i class="fab fa-linkedin"></i></a>
+        
+        <!-- Add updated text under social media icons -->
+        <br>
+        <small><i>updated fall24</i></small>
+      </div>
     </div>
+  </div>
 </footer>
+
+<style>
+.footer-background {
+    position: relative;
+    padding-top: 20px; /* Adjust as necessary */
+}
+
+.footer-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full viewport width */
+    height: 10px; /* Height of the SVG */
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10000" height="10"><path d="M0 5 Q 50 0 100 5 T 200 5 T 300 5 T 400 5 T 500 5 T 600 5 T 700 5 T 800 5 T 900 5 T 1000 5" fill="transparent" stroke="%23CC5500" stroke-width="2"/></svg>') repeat-x;
+    background-size: auto; /* Ensure the wave repeats */
+    z-index: -1; /* Ensure the wave stays behind the content */
+}
+
+
+</style>
 
     </div>
   </body>
